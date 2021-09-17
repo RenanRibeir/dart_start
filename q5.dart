@@ -1,6 +1,14 @@
+import 'dart:io';
+
 main() {
-  String word1 = "aba";
-  String word2 = "abb";
+  String word1;
+  String word2;
+
+  print("Entre com a primeira palavra\n");
+  word1 = stdin.readLineSync()!;
+
+  print("Entre com a segunda palavra\n");
+  word2 = stdin.readLineSync()!;
 
   bool anagrama = true;
 
