@@ -25,7 +25,6 @@ main() {
               .toList()[dicionario.keys.toList().indexOf(inputl[i])] +
           1;
     } else {
-      //print(inputl[i]);
       dicionario[inputl[i]] = 1;
     }
   }
