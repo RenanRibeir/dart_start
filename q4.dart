@@ -9,7 +9,6 @@ main() {
 
     if (input[i] == ' ') {
       inputl.add(temp.substring(0, temp.length - 1));
-
       temp = '';
     }
 
@@ -22,10 +21,11 @@ main() {
 
   for (int i = 0; i < inputl.length; i++) {
     if (dicionario.containsKey(inputl[i])) {
-      dicionario[inputl[i]] = 1;
-      print(dicionario.values.toList()[i]);
+      dicionario[inputl[i]] = dicionario.values
+              .toList()[dicionario.keys.toList().indexOf(inputl[i])] +
+          1;
     } else {
-      print(inputl[i]);
+      //print(inputl[i]);
       dicionario[inputl[i]] = 1;
     }
   }
