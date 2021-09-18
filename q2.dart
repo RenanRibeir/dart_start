@@ -13,7 +13,7 @@ main() {
     matrix.add([]);
     for (int j = 0; j < columns; j++) {
       print("digite o item da linha $i coluna $j: ");
-      matrix[i].add(int.parse(stdin.readLineSync()!));
+      matrix[i].add(stdin.readLineSync()!);
     }
   }
 
