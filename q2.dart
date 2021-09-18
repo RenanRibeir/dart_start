@@ -1,4 +1,4 @@
-/* import 'dart:io';
+import 'dart:io';
 
 main() {
   print("digite a quantidade de linhas da sua matriz");
@@ -7,19 +7,17 @@ main() {
   print("digite a quantidade de colunas da sua matriz");
   int columns = int.parse(stdin.readLineSync()!);
 
-  List<List<int>> matrix = new List<List<int>>(lines);
+  var matrix = [];
 
   for (int i = 0; i < lines; i++) {
-    List<int> list;
+    matrix.add([]);
     for (int j = 0; j < columns; j++) {
       print("digite o item da linha $i coluna $j: ");
-      //list.add(int.parse(stdin.readLineSync()!));
+      matrix[i].add(int.parse(stdin.readLineSync()!));
     }
   }
 
   for (int i = 0; i < lines; i++) {
-    for (int j = 0; j < columns; j++) {
-      //print(matrix[i][j]);
-    }
+    print("Linha $i: ${matrix[i]}");
   }
-} */
+}
